@@ -1,0 +1,226 @@
+/* ==========================
+   Google Fonts
+========================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Inter', sans-serif;
+}
+
+/* ==========================
+   App Background
+========================== */
+.stApp {
+    background: #0F172A;
+    color: #F8FAFC;
+}
+
+.block-container {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+    max-width: 1200px;
+}
+
+/* ==========================
+   Sidebar
+========================== */
+
+[data-testid="stSidebar"]{
+    background:#111827;
+    border-right:1px solid #1F2937;
+}
+
+section[data-testid="stSidebar"] .block-container{
+    padding:1.2rem !important;
+}
+
+/* ==========================
+   Header
+========================== */
+
+.nexora-header{
+    text-align:center;
+    margin-bottom:2rem;
+}
+
+.nexora-title{
+    font-family:'Space Grotesk',sans-serif;
+    font-size:3rem;
+    font-weight:700;
+    color:white;
+    margin-bottom:.2rem;
+    margin-top:2.2rem;
+}
+
+.nexora-tagline{
+    color:#94A3B8;
+    font-size:1rem;
+}
+
+.header-line{
+    width:70px;
+    height:3px;
+    margin:18px auto;
+    border-radius:50px;
+    background:#4F46E5;
+}
+
+/* ==========================
+   Text Area
+========================== */
+
+.stTextArea textarea{
+    background:#111827 !important;
+    color:white !important;
+    border:1px solid #374151 !important;
+    border-radius:16px !important;
+    padding:16px !important;
+    font-size:15px !important;
+}
+
+.stTextArea textarea:focus{
+    border-color:#6366F1 !important;
+    box-shadow:0 0 0 3px rgba(99,102,241,.2);
+}
+
+/* ==========================
+   Buttons
+========================== */
+
+.stButton button{
+    background:#4F46E5 !important;
+    color:white !important;
+    border:none !important;
+    border-radius:12px !important;
+    padding:.75rem 1.5rem !important;
+    font-weight:600 !important;
+    transition:.25s;
+}
+
+.stButton button:hover{
+    background:#6366F1 !important;
+    transform:translateY(-2px);
+}
+
+/* ==========================
+   Response Card
+========================== */
+
+.response-card{
+    background:#111827;
+    border:1px solid #1F2937;
+    border-radius:18px;
+    padding:24px;
+    margin-top:18px;
+    line-height:1.8;
+}
+
+/* ==========================
+   Agent Cards
+========================== */
+
+.agent-card{
+    background:#111827;
+    border:1px solid #1F2937;
+    border-radius:14px;
+    padding:18px;
+    margin-top:12px;
+}
+
+.agent-card-header{
+    font-weight:600;
+    color:#818CF8;
+    margin-bottom:8px;
+}
+
+/* ==========================
+   Agent Pills
+========================== */
+
+.agent-pill{
+    display:inline-block;
+    background:#1E293B;
+    border:1px solid #334155;
+    color:#CBD5E1;
+    border-radius:30px;
+    padding:5px 14px;
+    margin:4px;
+    font-size:13px;
+}
+
+.agent-pill.active{
+    background:#312E81;
+    border-color:#6366F1;
+    color:white;
+}
+
+/* ==========================
+   History
+========================== */
+
+.history-item{
+    background:#111827;
+    border:1px solid transparent;
+    border-radius:12px;
+    padding:12px;
+    margin:8px 0;
+    color:#CBD5E1;
+    transition:.2s;
+}
+
+.history-item:hover{
+    border-color:#6366F1;
+    background:#172033;
+}
+
+/* ==========================
+   File Uploader
+========================== */
+
+[data-testid="stFileUploader"]{
+    background:#111827;
+    border:1px dashed #334155;
+    border-radius:14px;
+    padding:10px;
+}
+
+/* ==========================
+   Expander
+========================== */
+
+.streamlit-expanderHeader{
+    background:#111827 !important;
+    color:white !important;
+}
+
+/* ==========================
+   Divider
+========================== */
+
+hr{
+    border-color:#1F2937 !important;
+}
+
+/* ==========================
+   Scrollbar
+========================== */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#475569;
+    border-radius:10px;
+}
+
+/* Hide only menu & footer */
+#MainMenu{
+    visibility:hidden;
+}
+
+footer{
+    visibility:hidden;
+}
