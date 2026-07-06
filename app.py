@@ -4,7 +4,11 @@ import time
 import streamlit as st
 
 from utils.cache import get_cached_response, save_response  # added by vanshita
-#from database.mongodb import log_interaction
+try:
+    from database.mongodb import log_interaction
+except Exception:
+    def log_interaction(*args, **kwargs):
+        pass
 
 from core.orchestrator import detect_intent, route_agents
 from core.decision_engine import synthesize, get_active_agent_summary
