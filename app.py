@@ -183,10 +183,14 @@ if submit and user_query.strip():
                 ]
             }
 
-            log_interaction(
-                user_id=st.session_state.user_id,
-                query=user_query,
-                response=response_data
+            try:
+    log_interaction(
+        user_id=st.session_state.user_id,
+        query=user_query,
+        response=response_data
+    )
+except Exception:
+    pass
             )
 
             # Save to history
