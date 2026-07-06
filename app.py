@@ -191,7 +191,7 @@ if submit and user_query.strip():
     )
 except Exception:
     pass
-            )
+            
 
             # Save to history
             st.session_state.history.append({
